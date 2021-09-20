@@ -1,8 +1,8 @@
 body{
-    margin: 0px;
+    margin: 0px; /*para el tamaño de la margen pantalla general*/
 }
 ul{
-    list-style: none;
+    list-style: none; /*para quitar los puntos de la lista*/
     padding: 0px;
     margin: 0px;
 }
@@ -13,4 +13,20 @@ ul{
 }
 .logo{
     height: 70px;
+}
+.mainButton{
+    background-color: coral;
+    color: darkblue;
+    border: 0px;
+    padding: 5px 10px; /*para que el cuadro se haga más ancho o más angosto*/
+    border-radius: 10pt; /*para el borde*/
+    font-weight: bolder; 
+    box-shadow:3px 3px greenyellow; /*para agregar sombra*/
+}
+/*funciones*/
+.mainButton:hover{ /*para que cambie el estilo del cursor, puede ser a manito o a flecha*/
+    cursor:pointer;
+    /*box-shadow: 5px 5px; /*para que la sombra se mueva cuando das click*/
+    transform:scale(1.1); /*otra forma de simular el click*/
+
 }
