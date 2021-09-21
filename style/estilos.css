@@ -32,11 +32,11 @@ ul{
     color:cornsilk; 
 }
 /*funciones*/
-.mainButton:hover{ 
+.mainButton:hover{ /*el hover es una seudoclase que sirve para que aparezca el cursor de manito u otro para dar click*/
     box-shadow: 1px 1px cadetblue;
-    /*para que cambie el estilo del cursor, puede ser a manito o a flecha*/
+    /*para que cambie el estilo del cursor, puede ser a manito o a flecha
     cursor:pointer;
-    /*box-shadow: 5px 5px; /*para que la sombra se mueva cuando das click*/
+    /*box-shadow: 5px 5px; /*para que la sombra se mueva cuando das click
     transform:scale(1.1); /*otra forma de simular el click*/
 }
 
@@ -46,4 +46,18 @@ ul{
 }
 .secondaryButton:hover{
     box-shadow: 1px 1px darksalmon;
+}
+.buscar{
+    background: beige;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 8px; /*para el el borde sea redondito*/
+}
+
+.buscar:focus-within{
+    border: 1px solid blue;
+}
+.buscar > input{
+    outline: none;
+    border: 0px;
 }
