@@ -1,8 +1,8 @@
 body{
-    margin: 0px;
+    margin: 0px; /*para el tamaño de la margen pantalla general*/
 }
 ul{
-    list-style: none;
+    list-style: none; /*para quitar los puntos de la lista*/
     padding: 0px;
     margin: 0px;
 }
@@ -10,4 +10,54 @@ ul{
     display: flex;
     justify-content:space-between;
     padding: 10px;
+}
+.logo{
+    height: 70px;
+}
+
+.button{
+   border: 0px;
+    padding: 5px 10px; /*para que el cuadro se haga más ancho o más angosto*/
+    border-radius: 10px; /*para el borde*/
+    font-weight: bolder; 
+    box-shadow:3px 3px aqua; /*para agregar sombra*/ 
+}
+.button:hover{
+    cursor: pointer;
+    transform:scale(1.1); /*escala de acercamiento al hacer click*/
+}
+
+.mainButton{
+    background-color: rgb(43, 85, 105);
+    color:cornsilk; 
+}
+/*funciones*/
+.mainButton:hover{ /*el hover es una seudoclase que sirve para que aparezca el cursor de manito u otro para dar click*/
+    box-shadow: 1px 1px cadetblue;
+    /*para que cambie el estilo del cursor, puede ser a manito o a flecha
+    cursor:pointer;
+    /*box-shadow: 5px 5px; /*para que la sombra se mueva cuando das click
+    transform:scale(1.1); /*otra forma de simular el click*/
+}
+
+.secondaryButton{
+    background: crimson;
+    color: darkgray;
+}
+.secondaryButton:hover{
+    box-shadow: 1px 1px darksalmon;
+}
+.buscar{
+    background: beige;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 8px; /*para el el borde sea redondito*/
+}
+
+.buscar:focus-within{
+    border: 1px solid blue;
+}
+.buscar > input{
+    outline: none;
+    border: 0px;
 }
